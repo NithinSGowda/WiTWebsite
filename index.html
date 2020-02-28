@@ -1,31 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+    <title>WiT 2020</title>            
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
-    <div class="container-1">
-        <img src="pes_logo_white.png" width="200px" class="pes-logo"><br>
+    <!-- <div class="logo-container">
+        <img src="pes_logo_white.png" id="pes-logo">
 
         <div class="title">
             <span class="main-title">Women in TECH</span>
         </div>
         <div class="logo">
-            <img src="mainlogo.png" width="150px" class="ieee-logo">
+        <img src="mainlogo.png" id="ieee-logo">
         </div>
-        <div class="speakers">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis dicta facere, assumenda sequi cupiditate corporis quae non quod maiores nam, repellat rerum ab totam, perspiciatis rem reprehenderit reiciendis modi.
+
+    </div> -->
+
+    <!-- <marquee>
+        <img src="pes_logo_white.png" class="marquee-image">
+        <img src="mainlogo.png" class="marquee-image">
+    </marquee> -->
+
+    <header class="header">
+        <div id="particle-container"></div>
+        <section id="main-title-container">
+            <div id="main-title-div">
+                <h1 id="main-title" class="head1">Women</h1>
+                <h1 id="main-title" class="head2">in</h1>
+                <h1 id="main-title" class="head3">Tech</h1>
+            </div>
+            <h2 id="home-date">8th March, 2020</h2>
+            <p>AN IEEE PESU EC CAMPUS, WIE CHAPTER EVENT</p>
+            <p id="closed-text" style="display: none; font-size: 1.4rem" class="timer">Registrations Closed</p>
+            <p id ="countdown" class="timer" style="margin-bottom: 0.5em;">Registrations Close in<br> <span id="days"></span>D <span id="hours"></span>H <span id="minutes"></span>M <span id="seconds"></span>S </p>
+            <a class="register-button" id="top-register-button" style="margin-top: 0; padding: 0.7em 1em; border-radius: 15px;" href="#register-container">Register Now!</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about-container">About</a></li><!--
+                    --><li><a href="#speakers-container">Speakers</a></li><!--
+                    --><li><a href="#schedule-container">Schedule</a></li><!--
+                   --><li><a href="#register-container">Register</a></li><!--
+                    --><li class="last-nav-item"><a href="#contact-container">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#about-container" id="read-more"><img src="down_arrow.svg" height="40px"></a>
+        </section>
+    </header>
+
+    <div class="overlay">
+
+    <section class="section" id="about-container">
+        <div data-aos="fade-right">
+            <h1 id="section-title">About</h1>
+            <p class="content-body">
+                Women in Technology (WiT) is an annual event
+                organised by PESU South Campus IEEE Student Branch
+                to inspire, engage and advance women in engineering.
+                The event provides professional women in technology,
+                whether in industry, academia, or government a stage
+                to tell their stories of success. This year, we are
+                privileged to host six speakers who will be sharing
+                their journeys on the platform.
+                It aims to discuss how women can have a larger and
+                crucial role in creating success stories in business and
+                technology.</p>
+
+            <p class="content-body" style="font-weight: bold;">Registration Fee:</p>
+            <ul>
+                <li>IEEE Members: &#8377 170</li>
+                <li>Non-IEEE Members: &#8377 200</li>
+            </ul>
         </div>
+    </section>
+
+    <section class="section" id="speakers-container">
+        <h1 id="section-title" data-aos="fade-right">Speakers</h1>
+        <div class="speakers-container">
+            <div class="speaker card" id="speaker-1" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="rekha.jpeg">
+                <h3 class="speaker-h">Rekha Kodali</h3>
+                <h5 class="speaker-h">Author, Practice Head (Principal Architect Technology Office) - Wipro</h5>
+                <div class="speaker-data speaker-1-data"><div class="dtext">Principal Architect, Solution Design and Strategy Head for Microsoft practice at Wipro with over 20+ years of experience with Microsoft technologies.
+
+                    Author of the renowned book, 'Developing Cloud Native Applications in Azure using .NET Core</div> </div>
+            </div>
+            <div class="speaker card" id="speaker-2" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="tina.jpeg">
+                <h3 class="speaker-h">Tina Vas</h3>
+                <h5 class="speaker-h">Senior Vice President Global HR at Hinduja Global Solutions</h5>
+                <div class="speaker-data speaker-2-data"><div class="dtext">20+ years of global industry experience in Human Resources in the Tech industry.
+
+                    Presiding Officer - PROSH [Prevention,
+                    
+                    Prohibition and Redressal of Sexual
+                    
+                    Harassment).</div> </div>
+            </div>
+            <div class="speaker card" id="speaker-3" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="Roopa.MV_Photo.jpg">
+                <h3 class="speaker-h">Roopa M.V</h3>
+                <h5 class="speaker-h">Scientist/Engineer at Indian Space Research Organisation [ISRO] </h5>
+                <div class="speaker-data speaker-3-data"><div class="dtext">22+ years of Experience in Spacecraft Operation and Health Analysis.
+
+                    Operations Director for Mars Orbiter
+                    
+                    Mission-Mangalyaan. Deputy Project Director for Chandrayaan-3 Mission Manager of
+                    
+                    Lunar and Interplanetary Mission group.</div> </div>
+            </div>
+            <div class="speaker card" id="speaker-4" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="palak.jpg">
+                <h3 class="speaker-h">Palak Jain</h3>
+                <h5 class="speaker-h">Software Engineer at Google</h5>
+                <div class="speaker-data speaker-4-data"><div class="dtext">Graduate from IIT Bombay with a Bachelor's in Computer Science. Interned at Google Chrome, San Francisco and NUS Singapore. Works on Machine Learning techniques to build fraud defences on Google Maps.</div>
+            </div></div>
+            <!-- </div> -->
+            <div class="speaker card" id="speaker-5" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="TBA.jpeg">
+                <h3 class="speaker-h">To be Announced</h3>
+                <h5 class="speaker-h">To be Announced</h5>
+                <div class="speaker-data speaker-5-data"><div class="dtext">SPEAKER-Data</div> </div>
+            </div>
+            <!-- <div class="speakers-container2"> -->
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div> -->
+            <!-- <div class="speaker card" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h5 class="speaker-h">Speaker Position</h5>
+            </div> -->
+            <!-- </div> -->
+            <!-- <div class="speaker" data-aos="zoom-in-up">
+                <img class="speaker-pic" src="sample.jpg">
+                <h3 class="speaker-h">Speaker Name Here</h3>
+                <h4 class="speaker-h">Speaker Position</h4>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="section" id="schedule-container">
+        <h1 id="section-title" data-aos="fade-right">Schedule</h1>
+        <table class="schedule-table" data-aos="fade-right">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Program</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 am</td>
+                    <td>Registration Starts</td>
+                </tr>
+                <tr>
+                    <td>10:00 am</td>
+                    <td>Inaugration</td>
+                </tr>
+                <tr>
+                    <td>10:30 am</td>
+                    <td>Event Phase - 1</td>
+                </tr>
+                <tr>
+                    <td>12:15 pm</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>01:00 pm</td>
+                    <td>Event Phase - 2</td>
+                </tr>
+                <tr>
+                    <td>02:45 pm</td>
+                    <td>Panel Discussion</td>
+                </tr>
+                <tr>
+                    <td>03:15 pm</td>
+                    <td>Vote of Thanks and Dispersal</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section" id="register-container">
+        <h1 id="section-title" data-aos="fade-right">Register</h1>
+        <!-- <iframe id="register-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe8Yqj9nGlwX-DTSKNef2Jw5Fj_pbcM2nVRyjU_a5iqwE9G0g/viewform?embedded=true"
+            frameborder="0">Loading…</iframe> -->
+        <a class="from-left btn register-button" href="https://bit.ly/2T2B8cF" target="_blank" data-aos="fade-right">Register Here</a>
+    </section>
+
+    
+
+    <section class="section" id="contact-container">
+        <h1 id="section-title" data-aos="fade-right">Contact Us</h1>
+        <div class="contact-container" data-aos="fade-right">
+            <iframe id="small-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
+                width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe id="big-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7184702544446!2d77.662519415386!3d12.861451490928145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cbccb22bec1%3A0x4bad30b7a7fd5e76!2sPES%20University%20Electronic%20City%20Campus!5e0!3m2!1sen!2sin!4v1582157301025!5m2!1sen!2sin"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="contact-details">
+                <table class="contact-table">
+                    <tbody>
+                        <tr>
+                            <td>Anjali Deshpande : </td>
+                            <td>+91-8884236626</td>
+                        </tr>
+                        <tr>
+                            <td>Nikita Raikar : </td>
+                            <td>+91-9663460745</td>
+                        </tr>
+                        <tr>
+                            <td>Siddesh Jain : </td>
+                            <td>+91-9611298059</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="logo-container">
+        <div class="big-logo-container">
+            <div class="logo-container">
+                <img src="pesu.png" id="pesu-logo">
+            </div>
+            <div class="logo-container">
+                <img src="ieeepesit.png" id="ieee-logo">
+            </div>
+            <div class="logo-container">
+                <img src="wie.png" id="wie-logo">
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- <div class="bottom-bar"></div> -->
+
+    <!-- <div class="speakers">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis dicta facere, assumenda sequi
+        cupiditate corporis quae non quod maiores nam, repellat rerum ab totam, perspiciatis rem reprehenderit
+        reiciendis modi.
     </div>
 
     <div class="container-2">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, asperiores atque ullam, ea, vitae minima labore eum quia sit perferendis sunt quasi dolore corporis quis temporibus ipsa et vero perspiciatis.
-    </div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, asperiores atque ullam, ea, vitae minima
+        labore eum quia sit perferendis sunt quasi dolore corporis quis temporibus ipsa et vero perspiciatis.
+    </div> -->
 
-
+    <!-- 
     <div class="container-3">
         <table class="table">
             <tr>
@@ -37,10 +268,11 @@
             <tr>
                 <td>FAQ</td>
                 <td>Spotlight</td>
-                <td><img src="facebook-icon-png-774.png" class="sicon">
-                <img src="—Pngtree—white whatsapp icon png_3562063.png" class="sicon">
-                <img src="icons8-instagram-48.png" class="sicon">
-                <img src="" class="sicon">
+                <td >
+                    <img src="facebook-icon-png-774.png" class="sicon">
+                    <img src="Whatsapp.png" class="sicon"style="width:35px;height:35px;">
+                    <img src="insta2.png" class="sicon" style="width:30px;height:30px;">
+                    <img src="twitter.png" class="sicon" style="width:30px;height:30px;">
                 </td>
             </tr>
             <tr height="60px">
@@ -49,6 +281,28 @@
                 <td>Developed by IEEE-Tech team</td>
             </tr>
         </table>
-    </div>
+    </div> -->
+
+    <a href="#" id="button"></a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var topbutton = document.getElementById("button");
+        document.addEventListener('scroll', function (e) {
+            // console.log(window.scrollY);
+            if (window.scrollY > (window.innerHeight / 2)) {
+                topbutton.classList.add("show");
+            }
+            else {
+                topbutton.classList.remove("show");
+            }
+        });
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
