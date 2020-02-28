@@ -199,7 +199,7 @@ body {
 
 #button {
   display: inline-block;
-  background-color: #293147;
+  background-color: #677cb6;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -234,7 +234,7 @@ body {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.3em;
+  /* margin-top: 2.3em; */
   max-width: 1200px;
   color: beige;
   font-size: 1.1rem;
@@ -242,6 +242,14 @@ body {
 
 .content-body + ul {
   margin-top: 1em;
+}
+
+.content-header {
+  width: 84%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .speakers-container {
@@ -678,11 +686,11 @@ th {
     color: white;
   }
 }
+
 .speaker-data{
   min-width: 100%;
   min-height:100%;
-  max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgba(0, 0, 0, 0.671);
   position: absolute;
   color: white;
   top: 0;
@@ -695,5 +703,4 @@ th {
 
 .dtext{
   padding: 2em;
-  line-height: 1.8em;
 }

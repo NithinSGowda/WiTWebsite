@@ -86,6 +86,7 @@ setInterval(() => {
   }
 }, 1000);
 
+
 document.querySelector('#speaker-1').addEventListener('mouseenter', function () {
   document.querySelector('.speaker-1-data').style.display = 'block';
 })
